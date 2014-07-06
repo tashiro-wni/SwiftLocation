@@ -23,9 +23,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = 500
-        if( locationManager.respondsToSelector(Selector("requestWhenInUseAuthorization")) ){
-            locationManager.requestWhenInUseAuthorization()
-            //locationManager.requestAlwaysAuthorization()
+        
+        if( locationManager.respondsToSelector(Selector("requestAlwaysAuthorization")) ){
+            //locationManager.requestWhenInUseAuthorization()
+            locationManager.requestAlwaysAuthorization()
+        } else {
+            locationManager.startUpdatingLocation()
+            println("startUpdatingLocation")
         }
     }
 
