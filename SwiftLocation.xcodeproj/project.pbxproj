@@ -12,6 +12,7 @@
 		12F845A21961C7030039E6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F845A01961C7030039E6CC /* Main.storyboard */; };
 		12F845A41961C7030039E6CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F845A31961C7030039E6CC /* Images.xcassets */; };
 		12F845B01961C7030039E6CC /* SwiftLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F845AF1961C7030039E6CC /* SwiftLocationTests.swift */; };
+		12F845BA1961C7480039E6CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F845B91961C7480039E6CC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		12F845A91961C7030039E6CC /* SwiftLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F845AE1961C7030039E6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F845AF1961C7030039E6CC /* SwiftLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLocationTests.swift; sourceTree = "<group>"; };
+		12F845B91961C7480039E6CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F845BA1961C7480039E6CC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 		12F8458E1961C7030039E6CC = {
 			isa = PBXGroup;
 			children = (
+				12F845BB1961C75C0039E6CC /* Frameworks */,
 				12F845991961C7030039E6CC /* SwiftLocation */,
 				12F845AC1961C7030039E6CC /* SwiftLocationTests */,
 				12F845981961C7030039E6CC /* Products */,
@@ -107,6 +111,14 @@
 				12F845AE1961C7030039E6CC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12F845BB1961C75C0039E6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12F845B91961C7480039E6CC /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -314,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -339,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -399,6 +413,7 @@
 				12F845B51961C7030039E6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12F845B61961C7030039E6CC /* Build configuration list for PBXNativeTarget "SwiftLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +422,7 @@
 				12F845B81961C7030039E6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

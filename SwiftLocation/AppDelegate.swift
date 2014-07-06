@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SwiftLocation
 //
-//  Created by tasshy on 7/1/14.
+//  Created by Tomohiro Tashiro on 2014/7/1.
 //  Copyright (c) 2014 test. All rights reserved.
 //
 
