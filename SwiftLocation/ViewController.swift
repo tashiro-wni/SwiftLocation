@@ -60,7 +60,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: AnyObject[]!) {
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         println("found \(locations.count) placemarks.")
         if( locations.count > 0 ){
             let location = locations[0] as CLLocation;
