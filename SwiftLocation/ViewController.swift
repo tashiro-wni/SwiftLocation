@@ -55,4 +55,3 @@ extension ViewController: CLLocationManagerDelegate {
         print("\(error.localizedDescription)")
     }
 }
-
