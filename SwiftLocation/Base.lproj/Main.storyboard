@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,21 +18,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="chy-me-y1l">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="chy-me-y1l" secondAttribute="bottom" id="I7B-Yr-6D9"/>
                             <constraint firstItem="chy-me-y1l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jpd-a1-Ahb"/>
+                            <constraint firstAttribute="bottom" secondItem="chy-me-y1l" secondAttribute="bottom" id="MLi-qy-bQP"/>
+                            <constraint firstAttribute="trailing" secondItem="chy-me-y1l" secondAttribute="trailing" id="Uma-Aj-Yht"/>
+                            <constraint firstItem="chy-me-y1l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c3H-OU-yXy"/>
+                            <constraint firstItem="chy-me-y1l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mkl-KS-RVc"/>
                             <constraint firstItem="chy-me-y1l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qw2-xD-GG9"/>
                             <constraint firstAttribute="trailing" secondItem="chy-me-y1l" secondAttribute="trailing" id="vHG-zo-NFu"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="chy-me-y1l" id="OUF-Om-vkh"/>
